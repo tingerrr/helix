@@ -15,8 +15,8 @@
         <link rel="icon" href="favicon-d5706b94.svg">
         <link rel="shortcut icon" href="favicon-cc1a8b51.png">
         <link rel="stylesheet" href="css/variables-8adf115d.css">
-        <link rel="stylesheet" href="css/general-2459343d.css">
-        <link rel="stylesheet" href="css/chrome-ae938929.css">
+        <link rel="stylesheet" href="css/general-0392ca55.css">
+        <link rel="stylesheet" href="css/chrome-fc474251.css">
         <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
@@ -28,7 +28,7 @@
         <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="custom-5658e571.css">
+        <link rel="stylesheet" href="custom-10faeed5.css">
 
 
         <!-- Provide site root and default themes to javascript -->
@@ -36,10 +36,10 @@
             const path_to_root = "";
             const default_light_theme = "colibri";
             const default_dark_theme = "colibri";
-            window.path_to_searchindex_js = "searchindex-eb8af346.js";
+            window.path_to_searchindex_js = "searchindex-2fe1c435.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-c295f344.js"></script>
+        <script src="toc-c2fa7ea4.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -232,6 +232,7 @@ space.B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
 <ul>
 <li>Unicode <code>%u{..}</code>. The contents may contain up to six hexadecimal numbers corresponding to a Unicode codepoint value. For example <code>:echo %u{25CF}</code> prints <code>●</code> to the statusline.</li>
 <li>Shell <code>%sh{..}</code>. The contents are passed to the configured shell command. For example <code>:echo %sh{echo "20 * 5" | bc}</code> may print <code>100</code> on the statusline on when using a shell with <code>echo</code> and the <code>bc</code> calculator installed. Shell expansions are evaluated recursively. <code>%sh{echo '%{buffer_name}:%{cursor_line}'}</code> for example executes a command like <code>echo 'README.md:1'</code>: the variables within the <code>%sh{..}</code> expansion are evaluated before executing the shell command.</li>
+<li>Register <code>%reg{..}</code>. The contents should be a single character representing the register name. For example, <code>:set-register a hello world</code> followed by <code>echo %reg{a}</code> prints <code>hello world</code> to the statusline.</li>
 </ul>
 <p>As mentioned above, double quotes can be used to surround arguments containing spaces but also support expansions within the quoted content unlike single quotes or backticks. For example <code>:echo "circle: %u{25CF}"</code> prints <code>circle: ●</code> to the statusline while <code>:echo 'circle: %u{25CF}'</code> prints <code>circle: %u{25CF}</code>.</p>
 <p>Note that expansions are only evaluated once the Enter key is pressed in command mode.</p>
@@ -299,13 +300,16 @@ space.B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
 
         <script src="elasticlunr-ef4e11c1.min.js"></script>
         <script src="mark-09e88c2c.min.js"></script>
-        <script src="searcher-c2a407aa.js"></script>
+        <script src="searcher-09f2665d.js"></script>
 
         <script src="clipboard-1626706a.min.js"></script>
         <script src="highlight-abc7f01d.js"></script>
-        <script src="book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="ts-query-56018970.js"></script>
+        <script src="version-3313557a.js"></script>
+
+        <script src="book-c22b7243.js"></script>
 
 
 
